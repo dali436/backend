@@ -338,7 +338,7 @@ app.get('/api/users/:id', async (req, res) => {
   }
 });
 
-app.post('/api/users', async (req, res) => {
+app.post('/', async (req, res) => {
   const { name, email } = req.body;
 
   if (!name || !email) {
